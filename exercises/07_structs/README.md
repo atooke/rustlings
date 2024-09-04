@@ -1,6 +1,20 @@
 # Structs
 
-Rust has three struct types: a classic C struct, a tuple struct, and a unit struct.
+Rust has three struct types:
+* classic C struct
+  * named fields
+  * fields can be mutable & private
+  * fields defined inside {}.
+
+* tuple struct - uple structs have the added meaning the struct name provides but don’t have names associated with their fields; rather, they just have the types of the fields.
+  * uses () instead of {}.
+* unit struct - Unit-like structs can be useful when you need to implement a trait on some type but don’t have any data that you want to store in the type itself.
+
+# Struct methods:
+* similar to functions: we declare them with the fn keyword and a name.
+* first parameter is always self.
+* start stuct methods with impl (implementation) block declaration.
+
 
 ## Further information
 
